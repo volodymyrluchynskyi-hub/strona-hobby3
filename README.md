@@ -1,1 +1,1 @@
-﻿# strona-hobby
+Stronna hobby
