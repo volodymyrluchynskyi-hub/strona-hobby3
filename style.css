@@ -230,38 +230,39 @@ main {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-    padding: 10px;
     justify-content: center;
 }
 
 .galeria img {
     height: auto;
     border-radius: 8px;
-    object-fit: cover;
-    border: 3px solid #333; /* ← obramowanie */
+    border: 3px solid black;
+}
+
+.galeria.small {
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 @media (max-width: 900px) {
-    .galeria img {
-        width: calc(33%-10px);
+    .small img {
+        width: 33%;
     }
 }
 
 @media (max-width: 600px) {
-    .galeria img {
+    .small img {
         width: 50%;
     }
-}
-
-@media (max-width: 400px) {
-    .galeria img {
-        width: 100%;
+    .small{
+        padding: 0px;
     }
 }
 
 .galeria.big img {
     width: 100%;
     max-width: 1000px;
+    margin: 10px;
 }
 
 .galeria.med img {
