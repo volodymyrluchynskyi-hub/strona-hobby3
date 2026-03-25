@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red.stone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/favicon.ico">
+</head>
+<body>
+    <nav>
+        <a href="index.html"><img src="img/redstone_logo.png" alt="redstone logo"></a>
+
+        <ul>
+            <li>
+                <a href="schematy.html">SCHEMATY</a>
+                <div class="dropdown">
+                    <a href="schematy.html#bramy">Bramy logiczne</a>
+                    <a href="schematy.html#dane">Komórki danych</a>
+                    <a href="schematy.html#trans">Transmisja danych</a>
+                </div>
+            </li>
+            
+            <li>
+                <a href="aktualizacje.html">NOWOŚCI</a>
+                <div class="dropdown">
+                    <a href="aktualizacje.html">Aktualizacje</a>
+                </div>
+            </li>
+           
+            <li>
+                <a href="podstawowy.html">KURSY</a>
+                <div class="dropdown">
+                    <a href="podstawowy.html">Podstawowy</a>
+                    <a href="zaawansowany.html">Zaawansowany</a>
+                </div>
+            </li>
+            <li>
+                <a href="kontakt.html">KONTAKT</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="artyk kurs">
+            <h1>Kurs Podstawowy</h1>
+            <h3>„Pierwsze kroki z redstone”</h3>
+            <p>Ten kurs jest idealny dla osób, które dopiero zaczynają swoją przygodę z redstone’em. Uczestnicy poznają fundamenty działania „elektryki” w Minecraft:</p>
+            <ul>
+                <li>czym jest redstone i jak działa jego sygnał</li>
+                <li>podstawowe komponenty (redstone dust, dźwignie, przyciski, pochodnie)</li>
+                <li>budowa prostych obwodów i mechanizmów</li>
+                <li>drzwi automatyczne, ukryte przejścia, proste pułapki</li>
+                <li>wprowadzenie do logiki (AND, OR, NOT w praktyce)</li>
+            </ul>
+            <p>Po ukończeniu poziomu podstawowego będziesz w stanie samodzielnie tworzyć funkcjonalne mechanizmy i rozumieć, jak przepływa sygnał redstone.</p>
+            
+            <hr>
+
+            <form class="form" action="action_page.php" method="post">
+                <label for="fname">Imie:</label>
+                <input type="text" id="fname" name="fname" placeholder="Jan" required><br>
+                <label for="lname">Nazwisko:</label>
+                <input type="text" id="lname" name="lname" placeholder="Kowalski" required><br>
+                <label for="mail">E-mail:</label>
+                <input type="email" id="mail" name="mail" placeholder="jan.kowalski@examle.com" required><br>
+                <label for="numer">Numer telefonu:</label>
+                <input type="tel" id="numer" name="numer" placeholder="123456789" pattern="[0-9]{3}[ -]?[0-9]{3}[ -]?[0-9]{3}" required><br>
+                <label for="data">Data urodzenia:</label>
+                <input type="date" id="data" name="data" required><br>
+                <textarea id="mesg" name="mesg" rows="3" cols="30" placeholder="Dlaczgo wybierasz nasz kurs?"></textarea><br>
+                <input class="submit" type="submit" value="Wyślij">
+                <input class="reset" type="reset" value="Resetuj">
+                <ul><li>Potwierdzenie zostanie wysłane pocztą elektroniczną.</li></ul>
+            </form>
+        
+        </div>
+    </main>
+    
+    <footer>
+        <p>2026&copy Volodymyr Luchynskyi</p>
+    </footer>
+
+</body>
+</html>
